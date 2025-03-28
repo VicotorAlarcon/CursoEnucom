@@ -56,6 +56,8 @@ public class ProductosServiceImpl implements IProductosService {
 		return dao.findAll(Sort.by(Direction.DESC,"idProducto"));
 	}
 	
+	
+	
 	public List<Productos> byTiendaId(int tiendaId){
 		return dao.findByTiendaId(tiendaId);
 	}

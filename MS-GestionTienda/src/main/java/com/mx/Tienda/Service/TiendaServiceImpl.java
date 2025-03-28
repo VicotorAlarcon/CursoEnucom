@@ -102,7 +102,6 @@ public class TiendaServiceImpl implements ITiendaService {
 	}
 	
 	public List<Clientes> getClientesRT(int tiendaId){
-	//List<Clientes> response = 
 		return restTemplate.postForObject("http://localhost:8013/Clientes/Tienda/" + tiendaId, null, List.class);
 	}
 	
